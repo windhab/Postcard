@@ -58,15 +58,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYN-TR-i8k">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="284" height="76"/>
-                                </variation>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1CF-3R-xtY">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -103,24 +94,44 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6Z-Ud-OMO"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYN-TR-i8k">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="284" height="76"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMO-NA-viD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="162" width="176" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="qYN-TR-i8k"/>
                                 <exclude reference="1CF-3R-xtY"/>
                                 <exclude reference="Zfk-CC-OrK"/>
                                 <exclude reference="XVc-9A-KmC"/>
                                 <exclude reference="Ky0-i9-cUy"/>
+                                <exclude reference="qYN-TR-i8k"/>
+                                <exclude reference="UMO-NA-viD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="qYN-TR-i8k"/>
                                 <include reference="1CF-3R-xtY"/>
                                 <include reference="Zfk-CC-OrK"/>
                                 <include reference="XVc-9A-KmC"/>
                                 <include reference="Ky0-i9-cUy"/>
+                                <include reference="qYN-TR-i8k"/>
+                                <include reference="UMO-NA-viD"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                         <outlet property="enterNameTextField" destination="Zfk-CC-OrK" id="0RX-8y-lFm"/>
                         <outlet property="mailButton" destination="Ky0-i9-cUy" id="dPe-YP-6cm"/>
                         <outlet property="messageLabel" destination="qYN-TR-i8k" id="xUk-6B-LNi"/>
+                        <outlet property="nameLabel" destination="UMO-NA-viD" id="XRc-d6-qmK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
